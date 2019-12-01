@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<!--    <link rel="stylesheet" href="/static/css/bootstrap/index.min.css">-->
+    <link href="https://cdn.bootcss.com/twitter-bootstrap/2.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div id='content'>
+    <div class='panel'>
+        <div class='header'>
+            <ul class='breadcrumb'>
+                <li><a href='/'>主页</a><span class='divider'>/</span></li>
+            </ul>
+        </div>
+        <div class='inner userinfo'>
+            <div class='user_big_avatar'>
+                <img src="https://avatars2.githubusercontent.com/u/23081357?v=4&amp;s=120" class="user_avatar"
+                     title="hiJordan"/>
+            </div>
+            <a class='dark'>{{ user.name }}</a>
+            <div class='user_profile'>
+                <ul class='unstyled'>
+                    <li>
+                        <i class="fa fa-lg fa-fw fa-github"></i>
+                        <a class='dark' href="https://github.com/hiJordan" target='_blank'>
+
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <p class='col_fade'>注册时间 3 小时前</p>
+        </div>
+    </div>
+    <div class='panel'>
+        <div class='header'>
+            <span class='col_fade'>最近创建的话题</span>
+        </div>
+        <div class='inner'>
+            <p>无话题</p>
+        </div>
+    </div>
+    <div class='panel'>
+        <div class='header'>
+            <span class='col_fade'>最近参与的话题</span>
+        </div>
+        <div class='inner'>
+            <p>无话题</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

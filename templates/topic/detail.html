@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+       <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/lib/editor/editor.css">
+    <link rel="stylesheet" href="/static/lib/webuploader/webuploader.css">
+    <script src="/static/lib/jquery-3.0.0.min.js"></script>
+    <script src="/static/lib/markdownit.js"></script>
+    <script src="/static/lib/webuploader/webuploader.withoutimage.js"></script>
+    <script src="/static/lib/editor/editor.js"></script>
+    <script src="/static/lib/editor/ext.js"></script>
+</head>
+<body>
+    <div id='content'>
+        <div class='panel'>
+            <div class='header topic_header'>
+                  <span class="topic_full_title">
+                    {{ topic.title }}
+                  </span>
+                    <div class="changes">
+                        <span>
+                          发布于 4 天前
+                        </span>
+                        <span>
+                          作者 <a href="/user/dailei0214">dailei0214</a>
+                        </span>
+                        <span>
+                          696 次浏览
+                        </span>
+                        <span> 来自 分享</span>
+                        <input class="span-common span-success pull-right collect_btn" type="submit" value="收藏" action="collect">
+                    </div>
+                <div id="manage_topic">
+                </div>
+            </div>
+            <div class='inner topic'>
+                <div class='topic_content'>
+                    <div class="markdown-text">
+                        <p>{{ topic.content }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='panel'>
+            <div class='header'>
+                <span class='col_fade'>{{ topic.replies() | count }} 回复</span>
+            </div>
+            {% for r in topic.replies() %}
+                <div class='cell reply_area reply_item'>
+                <div class='author_content'>
+                    <a href="/user/xing-lab112" class="user_avatar">
+                        <img src="https://avatars0.githubusercontent.com/u/58380324?v=4&amp;s=120" title="xing-lab112"/></a>
+                    <div class='user_info'>
+                        <a class='dark reply_author' href="{{ url_for('bp_user.profile') }}">{{ user.name }}</a>
+                        <a class="reply_time" >{{ loop.index }}楼 • 10 小时前</a>
+                    </div>
+                    <div class='user_action'>
+                      <span>
+                        <i class="fa up_btn fa-thumbs-o-up invisible" title="喜欢"></i>
+                            <span class="up-count">
+                            </span>
+                      </span>
+                        <span>
+                          <i class="fa fa-reply reply2_btn" title="回复"></i>
+                      </span>
+                    </div>
+                </div>
+                <div class='reply_content from-xing-lab112'>
+                    <div class="markdown-text">
+                        <p>
+                            {{r.content}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class='panel'>
+            <div class='header'>
+                <span class='col_fade'>添加回复</span>
+            </div>
+            <div class='inner reply'>
+                <form id='reply_form' action='{{ url_for("bp_reply.add") }}' method='post'>
+                    <div class='markdown_editor in_editor'>
+                        <div class='markdown_in_editor'>
+                            <input type="hidden" name="topic_id" value="{{ topic.id }}">
+                            <textarea class='editor' name='content' rows='8'></textarea>
+                            <div class='editor_buttons'>
+                                <input class='span-primary submit_btn' type="submit" data-loading-text="回复中.." value="回复">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+<script>
+  (function () {
+    var editor = new Editor();
+    editor.render($('.editor')[0]);
+  })();
+</script>
+</body>
+</html>

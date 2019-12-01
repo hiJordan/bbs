@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- style -->
+    <link href="https://cdn.bootcss.com/twitter-bootstrap/2.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+    <title>CNode：Node.js专业中文社区</title>
+</head>
+<body>
+<div id='content'>
+    <div class='panel'>
+        <div class='header'>
+            <ul class='breadcrumb'>
+                <li><a href='/'>主页</a><span class='divider'>/</span></li>
+                <li class='active'>登录</li>
+            </ul>
+        </div>
+        <div class='inner'>
+
+            <form id='signin_form' class='form-horizontal' action='{{ url_for("bp_user.login") }}' method='post'>
+                <div class='control-group'>
+                    <label class='control-label' for='name'>用户名</label>
+
+                    <div class='controls'>
+                        <input class='input-xlarge' id='name' name='name' size='30' type='text'/>
+                    </div>
+                </div>
+                <div class='control-group'>
+                    <label class='control-label' for='pass'>密码</label>
+
+                    <div class='controls'>
+                        <input class='input-xlarge' id='pass' name='pass' size='30' type='password'/>
+                    </div>
+                </div>
+                <input type='hidden' name='_csrf' value='mmc1yX25-YpLaBD-VN1TSyvv46TAoCzfLhaQ'/>
+
+                <div class='form-actions'>
+                    <input type='submit' class='btn btn-primary' value='登录'/>
+                    <input type='reset' class='btn btn-primary' value='重置'/>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

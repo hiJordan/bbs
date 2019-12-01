@@ -1,0 +1,162 @@
+15:31:16 kwargs,  {'name': 'ares'} <class 'dict'>
+15:32:23 kwargs,  {'name': 'ares'} <class 'dict'>
+15:34:21 kwargs,  {'name': 'ares'} <class 'dict'>
+15:34:39 kwargs,  {'name': 'gua'} <class 'dict'>
+15:36:32 kwargs,  {'name': 'ares'} <class 'dict'>
+15:36:32 debug 0
+15:37:02 kwargs,  {'name': 'ares'} <class 'dict'>
+15:37:06 kwargs,  {'name': 'ares'} <class 'dict'>
+15:47:35 kwargs,  {'name': 'ares'} <class 'dict'>
+15:47:59 kwargs,  {'name': 'ares'} <class 'dict'>
+15:48:18 kwargs,  {'name': 'ares'} <class 'dict'>
+15:49:25 kwargs,  {'name': 'ares'} <class 'dict'>
+15:49:30 kwargs,  {'name': 'ares'} <class 'dict'>
+15:49:31 kwargs,  {'name': 'ares'} <class 'dict'>
+15:49:33 kwargs,  {'name': 'ares'} <class 'dict'>
+15:49:57 kwargs,  {'name': 'ares'} <class 'dict'>
+15:50:37 kwargs,  {'name': 'ares'} <class 'dict'>
+15:50:59 kwargs,  {'name': 'ares'} <class 'dict'>
+15:52:06 kwargs,  {'name': 'ares'} <class 'dict'>
+15:52:21 kwargs,  {'name': 'ares'} <class 'dict'>
+15:53:25 kwargs,  {'name': 'ares'} <class 'dict'>
+15:54:44 kwargs,  {'name': 'ares'} <class 'dict'>
+15:55:05 kwargs,  {'name': 'ares'} <class 'dict'>
+15:55:20 kwargs,  {'name': 'ares'} <class 'dict'>
+15:55:32 kwargs,  {'name': 'ares'} <class 'dict'>
+15:56:41 kwargs,  {'name': 'ares'} <class 'dict'>
+15:56:41 debug 0
+15:57:04 kwargs,  {'name': 'ares'} <class 'dict'>
+15:58:04 kwargs,  {'name': 'ares'} <class 'dict'>
+16:04:41 kwargs,  {'name': 'ares'} <class 'dict'>
+16:08:19 kwargs,  {'name': 'ares'} <class 'dict'>
+16:10:34 kwargs,  {'name': 'ares'} <class 'dict'>
+16:12:35 kwargs,  {'name': 'ares'} <class 'dict'>
+16:13:34 kwargs,  {'name': 'ares'} <class 'dict'>
+16:14:16 kwargs,  {'name': 'ares'} <class 'dict'>
+16:14:16 debug 0
+16:14:31 kwargs,  {'name': 'ares'} <class 'dict'>
+16:16:11 kwargs,  {'name': 'ares'} <class 'dict'>
+16:16:48 kwargs,  {'name': 'ares'} <class 'dict'>
+16:17:16 kwargs,  {'name': 'ares'} <class 'dict'>
+16:23:59 kwargs,  {'name': 'ares'} <class 'dict'>
+16:25:32 kwargs,  {'name': 'ares'} <class 'dict'>
+16:25:32 debug 0
+16:25:43 kwargs,  {'name': 'ares'} <class 'dict'>
+16:48:34 kwargs,  {'name': 'ares'} <class 'dict'>
+16:48:34 kwargs,  {'id': 1} <class 'dict'>
+16:49:07 kwargs,  {'id': 1} <class 'dict'>
+16:49:22 kwargs,  {'id': 1} <class 'dict'>
+16:49:31 kwargs,  {'id': 1} <class 'dict'>
+19:43:38 kwargs,  {'name': 'test'} <class 'dict'>
+19:44:01 kwargs,  {'name': 'ares'} <class 'dict'>
+19:45:16 kwargs,  {'name': 'ares'} <class 'dict'>
+19:46:30 kwargs,  {'name': 'test'} <class 'dict'>
+19:46:30 debug 1
+19:48:21 kwargs,  {'name': 'test'} <class 'dict'>
+19:48:21 kwargs,  {'id': 2} <class 'dict'>
+21:59:31 kwargs,  {'id': 2} <class 'dict'>
+22:02:24 kwargs,  {'id': 2} <class 'dict'>
+22:35:52 kwargs,  {'id': 2} <class 'dict'>
+22:35:52 kwargs,  {'id': 1} <class 'dict'>
+22:35:52 debug 0
+22:35:52 kwargs,  {'id': 2} <class 'dict'>
+22:35:52 kwargs,  {'id': 1} <class 'dict'>
+22:35:52 debug 0
+22:38:21 kwargs,  {'id': 2} <class 'dict'>
+22:38:21 kwargs,  {'id': 1} <class 'dict'>
+22:38:21 debug 0
+22:38:59 kwargs,  {'id': 2} <class 'dict'>
+22:38:59 kwargs,  {'id': 1} <class 'dict'>
+22:38:59 debug 0
+22:43:59 kwargs,  {'id': 2} <class 'dict'>
+22:43:59 kwargs,  {'id': 1} <class 'dict'>
+22:43:59 debug 0
+22:44:38 kwargs,  {'id': 2} <class 'dict'>
+22:44:38 kwargs,  {'id': 1} <class 'dict'>
+22:44:38 debug 0
+22:45:26 kwargs,  {'id': 2} <class 'dict'>
+22:45:26 kwargs,  {'id': 1} <class 'dict'>
+22:45:26 debug 0
+22:45:35 kwargs,  {'id': 2} <class 'dict'>
+22:45:35 kwargs,  {'id': 2} <class 'dict'>
+22:45:35 debug 1
+22:45:35 kwargs,  {'id': 2} <class 'dict'>
+22:45:35 kwargs,  {'id': 2} <class 'dict'>
+22:45:35 debug 1
+23:09:01 kwargs,  {'id': 2} <class 'dict'>
+23:09:01 kwargs,  {'id': 1} <class 'dict'>
+23:09:01 debug 0
+23:09:01 kwargs,  {'topic_id': 1} <class 'dict'>
+23:09:01 kwargs,  {'topic_id': 1} <class 'dict'>
+23:09:15 kwargs,  {'id': 2} <class 'dict'>
+23:09:40 kwargs,  {'id': 2} <class 'dict'>
+23:09:40 kwargs,  {'id': 2} <class 'dict'>
+23:09:40 kwargs,  {'id': 1} <class 'dict'>
+23:09:40 debug 0
+23:09:40 kwargs,  {'topic_id': 1} <class 'dict'>
+23:10:04 kwargs,  {'id': 2} <class 'dict'>
+23:10:04 kwargs,  {'id': 1} <class 'dict'>
+23:10:04 debug 0
+23:10:04 kwargs,  {'topic_id': 1} <class 'dict'>
+23:10:04 kwargs,  {'topic_id': 1} <class 'dict'>
+23:10:19 kwargs,  {'topic_id': 1} <class 'dict'>
+23:10:19 kwargs,  {'topic_id': 2} <class 'dict'>
+23:10:21 kwargs,  {'id': 2} <class 'dict'>
+23:10:21 kwargs,  {'id': 1} <class 'dict'>
+23:10:21 debug 0
+23:10:21 kwargs,  {'topic_id': 1} <class 'dict'>
+23:10:21 kwargs,  {'topic_id': 1} <class 'dict'>
+23:10:29 kwargs,  {'id': 2} <class 'dict'>
+23:10:29 kwargs,  {'id': 2} <class 'dict'>
+23:10:29 debug 1
+23:10:29 kwargs,  {'topic_id': 2} <class 'dict'>
+23:10:29 kwargs,  {'topic_id': 2} <class 'dict'>
+23:10:36 kwargs,  {'id': 2} <class 'dict'>
+23:10:36 kwargs,  {'id': 2} <class 'dict'>
+23:10:36 kwargs,  {'id': 2} <class 'dict'>
+23:10:36 debug 1
+23:10:36 kwargs,  {'topic_id': 2} <class 'dict'>
+23:10:36 kwargs,  {'topic_id': 2} <class 'dict'>
+23:10:49 kwargs,  {'id': 2} <class 'dict'>
+23:10:49 kwargs,  {'id': 2} <class 'dict'>
+23:10:49 debug 1
+23:10:49 kwargs,  {'topic_id': 2} <class 'dict'>
+23:10:49 kwargs,  {'topic_id': 2} <class 'dict'>
+23:11:54 kwargs,  {'id': 2} <class 'dict'>
+23:11:54 kwargs,  {'id': 1} <class 'dict'>
+23:11:54 debug 0
+23:11:54 kwargs,  {'topic_id': 1} <class 'dict'>
+23:11:54 kwargs,  {'topic_id': 1} <class 'dict'>
+23:14:16 kwargs,  {'id': 2} <class 'dict'>
+23:14:16 kwargs,  {'id': 1} <class 'dict'>
+23:14:16 debug 0
+23:14:16 kwargs,  {'topic_id': 1} <class 'dict'>
+23:14:16 kwargs,  {'topic_id': 1} <class 'dict'>
+23:14:22 kwargs,  {'id': 2} <class 'dict'>
+23:14:22 kwargs,  {'id': 2} <class 'dict'>
+23:14:22 debug 1
+23:14:22 kwargs,  {'topic_id': 2} <class 'dict'>
+23:14:22 kwargs,  {'topic_id': 2} <class 'dict'>
+23:14:25 kwargs,  {'id': 2} <class 'dict'>
+23:14:25 kwargs,  {'id': 1} <class 'dict'>
+23:14:25 debug 0
+23:14:25 kwargs,  {'topic_id': 1} <class 'dict'>
+23:14:25 kwargs,  {'topic_id': 1} <class 'dict'>
+23:14:34 kwargs,  {'id': 2} <class 'dict'>
+23:14:34 kwargs,  {'id': 2} <class 'dict'>
+23:14:34 kwargs,  {'id': 1} <class 'dict'>
+23:14:34 debug 0
+23:14:34 kwargs,  {'topic_id': 1} <class 'dict'>
+23:14:34 kwargs,  {'topic_id': 1} <class 'dict'>
+23:15:03 kwargs,  {'id': 2} <class 'dict'>
+23:15:03 kwargs,  {'id': 2} <class 'dict'>
+23:15:03 kwargs,  {'id': 3} <class 'dict'>
+23:15:03 debug 2
+23:15:03 kwargs,  {'topic_id': 3} <class 'dict'>
+23:15:03 kwargs,  {'topic_id': 3} <class 'dict'>
+23:15:25 kwargs,  {'id': 2} <class 'dict'>
+23:15:25 kwargs,  {'id': 2} <class 'dict'>
+23:15:25 kwargs,  {'id': 3} <class 'dict'>
+23:15:25 debug 2
+23:15:25 kwargs,  {'topic_id': 3} <class 'dict'>
+23:15:25 kwargs,  {'topic_id': 3} <class 'dict'>
