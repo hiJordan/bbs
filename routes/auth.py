@@ -37,9 +37,9 @@ def login():
     return render_template('user/login.html')
 
 
-@bp_user.route('/profile')
-def profile():
-    user = current_user()
+@bp_user.route('/profile/<int:id>')
+def profile(id):
+    user = User.find(id)
     return render_template('user/profile.html', user=user)
 
 
