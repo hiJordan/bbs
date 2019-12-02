@@ -14,21 +14,23 @@ from routes import current_user
 bp_user = Blueprint('bp_user', __name__)
 
 
-@bp_user.route('/register', methods=['post', 'get'])
+@bp_user.route('/register', methods=['POST', 'GET'])
 def register():
-    if request.method == 'post':
+    if request.method == 'POST':
         form = request.form
         m = User.register(form)
         if m is not None:
-            return redirect('.login')
+            return redirect(url_for('.login'))
     return render_template('user/register.html')
 
 
-@bp_user.route('/login', methods=['post', 'get'])
+@bp_user.route('/login', methods=['POST', 'GET'])
 def login():
-    if request.method == 'post':
+    print(url_for('bp_topic.index'))
+    if request.method == 'POST':
         form = request.form
         m = User.login(form)
+
         if m is not None:
             session['user_id'] = m.id
             return redirect(url_for('bp_topic.index'))

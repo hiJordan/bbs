@@ -1,4 +1,5 @@
 from models import Model
+from models.user import User
 import time
 
 
@@ -10,3 +11,6 @@ class Reply(Model):
         self.user_id = form.get('user_id', None)
         self.ct = int(time.time())
         self.ut = self.ct
+
+    def get_user(self):
+        return User.find(self.user_id)
