@@ -129,3 +129,4 @@ data/Topic.txt
 data/User.txt
 *.xml
 *.iml
+*.txt
