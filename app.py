@@ -1,4 +1,4 @@
-from flask import (
+﻿from flask import (
     Flask,
     Blueprint,
     session,
@@ -23,7 +23,7 @@ if __name__ == '__main__':
     config = dict(
         debug=True,
         port=2000,
-        host='127.0.0.1'
+        host='0.0.0.0'
     )
     app.run(**config)
 
