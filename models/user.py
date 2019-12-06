@@ -3,7 +3,7 @@ from models import Model
 
 class User(Model):
     def __init__(self, form):
-        self.id = form.get('id', None)
+        self.id = None
         self.name = form.get('name', '')
         self.password = form.get('pass', '')
 

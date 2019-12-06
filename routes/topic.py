@@ -1,5 +1,4 @@
 from flask import (
-    Flask,
     Blueprint,
     session,
     request,
@@ -8,6 +7,7 @@ from flask import (
     render_template,
 )
 from models.topic import Topic
+from models.board import Board
 from routes import current_user
 
 
@@ -16,13 +16,19 @@ bp_topic = Blueprint('bp_topic', __name__)
 
 @bp_topic.route('/')
 def index():
-    topics = Topic.all()
-    return render_template('topic/index.html', ms=topics)
+    board_id = int(request.args.get('board_id', -1))
+    if board_id == -1:
+        topics = Topic.all()
+    else:
+        topics = Topic.find_all(board_id=board_id)
+    boards = Board.all()
+    return render_template('topic/index.html', ms=topics, bs=boards)
 
 
 @bp_topic.route('/new')
 def new():
-    return render_template('topic/new.html')
+    bs = Board.all()
+    return render_template('topic/new.html', bs=bs)
 
 
 @bp_topic.route('/add', methods=['post'])

@@ -26,21 +26,11 @@
             <form id='create_topic_form' action='{{ url_for("bp_topic.add") }}' method='post'>
                 <fieldset>
                     <span class="tab-selector">选择版块：</span>
-                    <select name="tab" id="tab-value">
+                    <select name="board_id" id="board">
                         <option value="">请选择</option>
-
-                        <option value="share">分享</option>
-
-
-                        <option value="ask">问答</option>
-
-
-                        <option value="job">招聘</option>
-
-
-                        <option value="dev">客户端测试</option>
-
-
+                        {% for b in bs %}
+                            <option value="{{ b.id }}">{{ b.title }}</option>
+                        {% endfor %}
                     </select>
                     <span id="topic_create_warn"></span>
                     <textarea autofocus class='span9' id='title' name='title' rows='1'

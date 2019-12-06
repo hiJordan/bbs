@@ -4,10 +4,11 @@ import time
 
 class Topic(Model):
     def __init__(self, form):
-        self.id = form.get('id', None)
+        self.id = None
         self.title = form.get('title', '')
         self.content = form.get('content', '')
         self.user_id = form.get('user_id', None)
+        self.board_id = int(form.get('board_id', -1))
         self.ct = int(time.time())
         self.ut = self.ct
         self.views = form.get('views', 0)

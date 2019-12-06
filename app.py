@@ -9,6 +9,7 @@
 from routes.auth import bp_user as user_routes
 from routes.topic import bp_topic as topic_routes
 from routes.reply import bp_reply as reply_routes
+from routes.board import bp_board as board_routes
 import config
 
 app = Flask(__name__)
@@ -17,7 +18,7 @@ app.secret_key = config.secret_key
 app.register_blueprint(user_routes, url_prefix='/user')
 app.register_blueprint(topic_routes, url_prefix='/topic')
 app.register_blueprint(reply_routes, url_prefix='/reply')
-
+app.register_blueprint(board_routes, url_prefix='/board')
 
 if __name__ == '__main__':
     config = dict(
