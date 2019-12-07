@@ -17,9 +17,12 @@ bp_board = Blueprint('bp_board', __name__)
 
 def role_check():
     user = current_user()
-    if user.role == 1:
-        return True
-    return False
+    if user is None:
+        return False
+    else:
+        if user.role == 1:
+            return True
+        return False
 
 
 @bp_board.route('/admin')
