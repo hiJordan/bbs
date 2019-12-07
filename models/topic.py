@@ -14,10 +14,20 @@ class Topic(Model):
         self.views = form.get('views', 0)
 
     @classmethod
-    def get(cls, id):
+    def get_views(cls, id):
         m = cls.find(id)
         m.views += 1
         m.save()
+        return m
+
+    def get_user(self):
+        from models.user import User
+        m = User.find(self.user_id)
+        return m
+
+    def get_board(self):
+        from models.board import Board
+        m = Board.find(self.board_id)
         return m
 
     def replies(self):
