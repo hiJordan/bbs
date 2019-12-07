@@ -5,10 +5,22 @@
     <title>admin-board</title>
 </head>
 <body>
-    <form action="{{ url_for('bp_board.add') }}" method="post">
-        <input name="title">
-        <br>
-        <button>add</button>
-    </form>
+    <div class="add-board">
+        <h3>添加版块</h3>
+        <form action="{{ url_for('bp_board.add') }}" method="post">
+            <input name="title">
+            <br>
+            <button>add</button>
+        </form>
+    </div>
+    <div class="ctl-board">
+        {% for b in bs %}
+            <div>
+                {{ b.title }}
+                <a href="{{ url_for('bp_board.delete', board_id=b.id) }}">删除</a>
+            </div>
+        {% endfor %}
+    </div>
+
 </body>
 </html>

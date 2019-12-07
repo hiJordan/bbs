@@ -4,6 +4,7 @@ from models import Model
 class User(Model):
     def __init__(self, form):
         self.id = None
+        self.role = 11
         self.name = form.get('name', '')
         self.password = form.get('pass', '')
 
