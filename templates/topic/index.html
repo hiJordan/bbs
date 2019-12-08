@@ -41,6 +41,11 @@
                             {% for t in ms %}
                             <div class="cell">
                                 <div class="topic_title_wrapper">
+                                    <a class='user_avatar' href="{{ url_for('bp_topic.index') }}">
+                                        <img src="{{ url_for('bp_topic.upload', filename=t.get_user().user_img) + '?v=4&amp;s=120' }}"
+                                             title="{{ t.get_user().name }}"/>
+                                        <span class="put_good">{{ t.get_board().title }}</span>
+                                    </a>
                                     <a class="topic_title" href="{{ url_for('bp_topic.detail', id=t.id) }}">
                                         {{ t.title }}
                                     </a>

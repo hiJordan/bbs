@@ -3,24 +3,14 @@
     "id": 1,
     "role": 11,
     "name": "ares",
-    "password": "1be6af03717a0906a774a129ac467fcea8f89849df003548a8039cffffb12baf"
+    "password": "1be6af03717a0906a774a129ac467fcea8f89849df003548a8039cffffb12baf",
+    "user_img": "ares.PNG"
   },
   {
     "id": 2,
     "role": 1,
     "name": "test",
-    "password": "1be6af03717a0906a774a129ac467fcea8f89849df003548a8039cffffb12baf"
-  },
-  {
-    "id": 3,
-    "role": 11,
-    "name": "gua",
-    "password": "1be6af03717a0906a774a129ac467fcea8f89849df003548a8039cffffb12baf"
-  },
-  {
-    "id": 4,
-    "role": 11,
-    "name": "gua1",
-    "password": "1be6af03717a0906a774a129ac467fcea8f89849df003548a8039cffffb12baf"
+    "password": "1be6af03717a0906a774a129ac467fcea8f89849df003548a8039cffffb12baf",
+    "user_img": "test.png"
   }
 ]

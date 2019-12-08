@@ -7,6 +7,7 @@ class User(Model):
         self.role = 11
         self.name = form.get('name', '')
         self.password = form.get('pass', '')
+        self.user_img = 'default.png'
 
     def salted_password(self, password, salt='$!@><?>HUI&DWQa`'):
         import hashlib

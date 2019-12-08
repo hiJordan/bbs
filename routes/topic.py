@@ -5,6 +5,7 @@ from flask import (
     redirect,
     url_for,
     render_template,
+    send_from_directory,
 )
 from models.topic import Topic
 from models.board import Board
@@ -44,3 +45,9 @@ def detail(id):
     user = current_user()
     m = Topic.get(id)
     return render_template('topic/detail.html', topic=m, user=user)
+
+
+@bp_topic.route('/upload/<filename>')
+def upload(filename):
+    from config import user_img_file_dir
+    return send_from_directory(user_img_file_dir, filename)

@@ -13,13 +13,13 @@
     <div class='panel'>
         <div class='header'>
             <ul class='breadcrumb'>
-                <li><a href='/'>主页</a><span class='divider'>/</span></li>
+                <li><a href='/'>主页</a><span class='divider'>/个人信息</span></li>
             </ul>
         </div>
         <div class='inner userinfo'>
             <div class='user_big_avatar'>
-                <img src="https://avatars2.githubusercontent.com/u/23081357?v=4&amp;s=120" class="user_avatar"
-                     title="hiJordan"/>
+                <img src="{{ url_for('bp_topic.upload', filename=user.user_img) + '?v=4&amp;s=120' }}" class="user_avatar"
+                     title="{{ user.user_img }}"/>
             </div>
             <a class='dark'>{{ user.name }}</a>
             <div class='user_profile'>
@@ -27,7 +27,6 @@
                     <li>
                         <i class="fa fa-lg fa-fw fa-github"></i>
                         <a class='dark' href="https://github.com/hiJordan" target='_blank'>
-
                         </a>
                     </li>
                 </ul>
@@ -50,6 +49,13 @@
         <div class='inner'>
             <p>无话题</p>
         </div>
+    </div>
+    <div class="upload-user-img">
+        <h3>上传用户头像</h3>>
+        <form action="{{ url_for('bp_user.add_user_img') }}" method="post" enctype="multipart/form-data">
+            <input name="file" type="file">
+            <button>上传</button>
+        </form>
     </div>
 </div>
 </body>
