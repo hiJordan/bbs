@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mail Index</title>
+    <link href="https://cdn.bootcss.com/twitter-bootstrap/2.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="send-form">
+    <form action="{{ url_for('bp_mail.add') }}" method="post">
+        <input type="text" name="title" placeholder="标题">
+        <input type="text" name="content" placeholder="输入内容">
+        <input type="text" name="receiver" placeholder="接收者">
+        <button>发送</button>
+    </form>
+</div>
+<div id='content'>
+    <div class='panel'>
+        <div class='header'>
+            <ul class='breadcrumb'>
+                <li><a href='/'>主页</a><span class='divider'>/</span></li>
+                <li class='active'>收到的消息</li>
+            </ul>
+        </div>
+        <div class='inner'>
+            {% for r in received_mails %}
+                <div>
+                    <a href="{{ url_for('bp_mail.detail', mail_id=r.id) }}">{{ r.title }}</a>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    <div class='panel'>
+        <div class='header'>
+            <span class='col_fade'>发送的消息</span>
+        </div>
+        {% for s in send_mails %}
+            <div>
+                <a href="{{ url_for('bp_mail.detail', mail_id=s.id) }}">{{ s.title }}</a>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+</body>
+</html>

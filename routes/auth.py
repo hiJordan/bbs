@@ -64,7 +64,6 @@ def add_user_img():
         file.save(os.path.join(user_img_file_dir, filename))
         user.user_img = filename
         user.save()
-
     return redirect(url_for('bp_topic.index'))
 
 
