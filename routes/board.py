@@ -42,9 +42,11 @@ def add():
 
 @bp_board.route('/delete/<int:board_id>')
 def delete(board_id):
+    board = Board.find(board_id)
+    print(board)
     if current_user() is False:
         return redirect(url_for('bp_user.login'))
-    m = Board.delete(board_id)
+    m = board.delete()
     if m is not None:
         return redirect(url_for('.index'))
     return redirect(url_for('bp_topic.index'))

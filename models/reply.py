@@ -1,5 +1,6 @@
 from models import Model
 from models.user import User
+from models.mongobject import MongObject
 import time
 
 
@@ -14,3 +15,19 @@ class Reply(Model):
 
     def get_user(self):
         return User.find(self.user_id)
+
+
+class Reply(MongObject):
+    __fields__ = MongObject.__fields__ + [
+        ('content', str, ''),
+        ('topic_id', int, -1),
+        ('receiver_id', int, -1),
+        ('user_id', int, None)
+    ]
+
+    def get_user(self):
+        return User.find(self.user_id)
+
+    def set_user_id(self, user_id):
+        self.user_id = user_id
+        self.save()
