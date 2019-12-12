@@ -17,8 +17,8 @@ bp_topic = Blueprint('bp_topic', __name__)
 
 @bp_topic.route('/')
 def index():
-    board_id = int(request.args.get('board_id', -1))
-    if board_id == -1:
+    board_id = int(request.args.get('board_id', 0))
+    if board_id == 0:
         topics = Topic.all()
     else:
         topics = Topic.find_all(board_id=board_id)
